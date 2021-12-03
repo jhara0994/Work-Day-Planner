@@ -4,3 +4,4 @@ This website is meant to help you plan your work day in an effort to improve eff
 
 Below is a screenshot of the page:
 
+<img width="1421" alt="Screen Shot 2021-12-02 at 10 27 30 PM" src="https://user-images.githubusercontent.com/92455472/144541042-31134b1a-6e73-4b88-a4f1-934c1d064b52.png">
