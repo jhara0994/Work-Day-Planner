@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    var saveBtn = ".saveBtn";
     var today = moment();
-    $("#currentDay").text(today.format("MMMM Do YYYY"));
+    $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
 
     $(".saveBtn").on("click", function () {
         var textValue = $(this).siblings(".description").val();
@@ -19,17 +18,12 @@ $("#14 .description").val(localStorage.getItem("14"));
 $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
-$("#18 .description").val(localStorage.getItem("18"));
-$("#19 .description").val(localStorage.getItem("19"));
-$("#20 .description").val(localStorage.getItem("20"));
-$("#21 .description").val(localStorage.getItem("21"));
-
 
 
 function cssUpdate () {
    var currentHour = moment().hour();
    $(".time-block").each(function () {
-       var divTimeId = parseInt($(this).attr("id").split("hour")[1]);
+       var divTimeId = parseInt($(this).attr("id"));
         console.log(divTimeId, currentHour);
        if (divTimeId < currentHour) {
            $(this).removeClass("present");
